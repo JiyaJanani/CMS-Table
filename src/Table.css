@@ -1,0 +1,43 @@
+.editImg {
+  width: 24px;
+  height: 24px;
+}
+
+.table td,
+.table th {
+  border: 1px solid #dee2e6;
+}
+
+.declineBtn {
+  background: red;
+  color: white;
+  border: 0;
+  width: 72px;
+}
+
+.validateBtn {
+  background: green;
+  color: white;
+  border: 0;
+  width: 72px;
+}
+
+.searchItem {
+  display: grid;
+  grid-template-areas: "a a";
+  gap: 24px;
+  grid-auto-columns: 200px;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search {
+  width: 160px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.search:focus-visible {
+  outline: none;
+}
