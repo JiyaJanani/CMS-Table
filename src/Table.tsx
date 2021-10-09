@@ -36,6 +36,7 @@ const Table: FunctionComponent = () => {
 
   const updateSearchKey = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target?.value);
+    setcurPage(1);
   };
 
   const debounce = (

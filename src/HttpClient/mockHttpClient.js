@@ -10,9 +10,11 @@ const mockStoreClient = (storeClient) => {
     const bodyData = JSON.parse(config.data).data;
     let result = clients;
     let page = bodyData && bodyData.page ? bodyData.page : 1;
+    let resultCount = clients.length;
 
     if (bodyData && bodyData.searchKey) {
       result = clients.filter((e) => e.clientId === bodyData.searchKey);
+      resultCount = result.length;
     }
 
     result = result.slice((page - 1) * PageDataLimit, page * PageDataLimit);
@@ -23,7 +25,7 @@ const mockStoreClient = (storeClient) => {
           200,
           {
             list: result,
-            page: Math.round(clients.length / PageDataLimit),
+            page: Math.ceil(resultCount / PageDataLimit),
             total: clients.length,
           },
         ]);
