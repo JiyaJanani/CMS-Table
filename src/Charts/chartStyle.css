@@ -1,0 +1,15 @@
+.head {
+  text-align: left;
+  font-size: 22px;
+  padding: 16px;
+}
+
+.recharts-wrapper {
+  position: relative;
+  cursor: default;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

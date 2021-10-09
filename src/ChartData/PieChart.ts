@@ -25,3 +25,5 @@ export const PieChartData = [
     customer: 830,
   },
 ];
+
+export default PieChartData;

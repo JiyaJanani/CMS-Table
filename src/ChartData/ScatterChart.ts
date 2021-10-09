@@ -28,3 +28,5 @@ export const ScatterChartData = [
     customer: 4200,
   },
 ];
+
+export default ScatterChartData;

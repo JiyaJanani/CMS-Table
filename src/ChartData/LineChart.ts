@@ -28,3 +28,5 @@ export const LineChartData = [
     customer: 4200,
   },
 ];
+
+export default LineChartData;
